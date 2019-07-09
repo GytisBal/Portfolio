@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "node.normalize.scss": "^3.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass sass/main.scss dist/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GytisBal/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GytisBal/Portfolio/issues"
+  },
+  "homepage": "https://github.com/GytisBal/Portfolio#readme"
+}
