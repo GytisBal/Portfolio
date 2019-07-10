@@ -17,6 +17,7 @@ html {
 
 body {
   cursor: default;
+  height: 100%;
   box-sizing: border-box;
   backface-visibility: hidden;
   overflow-x: hidden;
@@ -169,17 +170,9 @@ body {
       transition: all 0.2s; }
 
 .section-about {
-  position: relative;
+  padding-top: 10rem;
   width: 100%;
-  height: 100vh; }
-  .section-about-container {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+  min-height: 100vh; }
   .section-about_contacts {
     height: 3rem;
     width: 100%; }
@@ -188,3 +181,14 @@ body {
     width: 33.33%; }
   .section-about_email:hover {
     color: #3b5998; }
+  .section-about_programs {
+    height: 8rem; }
+    .section-about_programs--icons {
+      text-align: center;
+      float: left;
+      width: 33.33%; }
+
+.section-projects {
+  padding-top: 10rem;
+  width: 100%;
+  min-height: 100vh; }
