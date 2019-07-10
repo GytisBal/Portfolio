@@ -19,8 +19,10 @@ html {
 }
 
 body {
+  cursor: default;
   box-sizing: border-box;
   backface-visibility: hidden;
   overflow-x: hidden;
   background-color: $color-light;
+  padding: 0 5rem 0 25rem;
 }

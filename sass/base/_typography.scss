@@ -6,36 +6,7 @@ body {
   line-height: 1.7;
 }
 
-.heaiding-primary {
-  color: white;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-
-  &--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-
-    @include respond(phone) {
-      letter-spacing: 1.5rem;
-      font-size: 5rem;
-    }
-  }
-  &--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out;
-
-    @include respond(phone) {
-      letter-spacing: 0.5rem;
-    }
-  }
-}
-
-.heading-secondary {
+.heading-primary {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -50,7 +21,8 @@ body {
     font-size: 2.5rem;
   }
 }
-.heading-tertiary {
+.heading-secondary {
+  text-transform: uppercase;
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
@@ -60,4 +32,17 @@ body {
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+}
+
+.heading-line {
+  width: 100%;
+  border: 0;
+  margin-top: 0;
+  height: 1rem;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-primary, 1),
+    rgba($color-primary, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
