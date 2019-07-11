@@ -23,6 +23,9 @@ body {
   overflow-x: hidden;
   background-color: #f7f7f7;
   padding: 0 5rem 0 25rem; }
+  @media (max-width: 75em) {
+    body {
+      padding: 0 5rem 0 5rem; } }
 
 body {
   position: relative;
@@ -134,20 +137,53 @@ body {
   height: 100vh;
   width: 20rem;
   background-color: #3b5998; }
+  @media (max-width: 75em) {
+    .navbar {
+      line-height: 7rem;
+      height: 7rem;
+      width: 100%; } }
   .navbar-icons {
     text-align: center;
     margin-bottom: 2rem; }
+    @media (max-width: 75em) {
+      .navbar-icons {
+        position: relative;
+        margin: auto;
+        height: 50%;
+        margin-bottom: 0; } }
     .navbar-icons_link {
       background-color: #5a3b98;
       padding: 1.5rem;
       color: #f7f7f7;
       border-radius: 50%; }
+      @media (max-width: 75em) {
+        .navbar-icons_link {
+          height: 100%;
+          margin: 0 2.5rem 0 2.5rem;
+          vertical-align: middle; } }
       .navbar-icons_link:hover {
         background-color: #8b9dc3;
         transition: all 0.2s; }
     .navbar-icons_item {
+      list-style: none;
       vertical-align: middle;
       font-size: 2.5rem; }
+    .navbar-icons_button {
+      display: none; }
+      @media (max-width: 75em) {
+        .navbar-icons_button {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          -webkit-transform: translate(-50%, 0);
+          -moz-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+          vertical-align: middle;
+          font-size: 4rem;
+          color: #dfe3ee;
+          display: initial; }
+          .navbar-icons_button:hover {
+            color: #8b9dc3; } }
   .navbar-nav {
     width: 100%;
     position: absolute;
@@ -156,9 +192,21 @@ body {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+    @media (max-width: 75em) {
+      .navbar-nav {
+        position: relative;
+        height: 100%;
+        left: initial;
+        top: initial;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0); } }
   .navbar-item {
     padding: 1.6rem;
     text-align: center; }
+    @media (max-width: 75em) {
+      .navbar-item {
+        display: none; } }
   .navbar-link {
     text-transform: uppercase;
     font-size: 2.4rem;
@@ -176,9 +224,17 @@ body {
   .section-about_contacts {
     height: 3rem;
     width: 100%; }
+    @media (max-width: 75em) {
+      .section-about_contacts {
+        height: auto;
+        width: 100%; } }
   .section-about_items {
     float: left;
     width: 33.33%; }
+    @media (max-width: 75em) {
+      .section-about_items {
+        float: initial;
+        width: 100%; } }
   .section-about_email:hover {
     color: #3b5998; }
   .section-about_programs {

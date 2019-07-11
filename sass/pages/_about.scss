@@ -6,10 +6,18 @@
   &_contacts {
     height: 3rem;
     width: 100%;
+    @include respond(tab-land) {
+      height: auto;
+      width: 100%;
+    }
   }
   &_items {
     float: left;
     width: 33.33%;
+    @include respond(tab-land) {
+      float: initial;
+      width: 100%;
+    }
   }
   &_email {
     &:hover {
