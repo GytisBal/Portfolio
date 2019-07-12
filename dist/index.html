@@ -33,22 +33,27 @@
             target="_blank"
             ><i class="navbar-icons_item fab fa-github"></i
           ></a>
-         <i class="navbar-icons_button fas fa-bars"></i>
+          <a href="javascript:void(0);" class="navbar-icons_button" onclick="togleNavigation()">
+              <i class="fas fa-bars"></i>
+            </a>
+              
+        </div>
+        <div class="navbar-nav-container" id="togleNavigation">
+            <li class="navbar-nav_item">
+                <a class="navbar-nav_link js-scroll-trigger" href="#about">About</a>
+              </li>
+              <li class="navbar-nav_item">
+                <a class="navbar-nav_link js-scroll-trigger" href="#projects"
+                  >Projects</a
+                >
+              </li>
+              <li class="navbar-nav_item">
+                <a class="navbar-nav_link js-scroll-trigger" href="#education"
+                  >Education</a
+                >
+              </li>
         </div>
         
-        <li class="navbar-item">
-          <a class="navbar-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="navbar-item">
-          <a class="navbar-link js-scroll-trigger" href="#projects"
-            >Projects</a
-          >
-        </li>
-        <li class="navbar-item">
-          <a class="navbar-link js-scroll-trigger" href="#education"
-            >Education</a
-          >
-        </li>
       </ul>
     </nav>
     <section class="section-about">

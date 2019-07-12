@@ -6,32 +6,16 @@
   width: 20rem;
   background-color: $color-primary;
 
-  @include respond(tab-land) {
-    line-height: 7rem;
-    height: 7rem;
-    width: 100%;
-  }
-
   &-icons {
     text-align: center;
     margin-bottom: 2rem;
-    @include respond(tab-land) {
-      position: relative;
-      margin: auto;
-      height: 50%;
-      margin-bottom: 0;
-    }
 
     &_link {
       background-color: $color-secondary-dark;
       padding: 1.5rem;
       color: $color-light;
       border-radius: 50%;
-      @include respond(tab-land) {
-        height: 100%;
-        margin: 0 2.5rem 0 2.5rem;
-        vertical-align: middle;
-      }
+
       &:hover {
         background-color: $color-secondary;
         transition: all 0.2s;
@@ -44,23 +28,6 @@
     }
     &_button {
       display: none;
-
-      @include respond(tab-land) {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        -webkit-transform: translate(-50%, 0);
-        -moz-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-        vertical-align: middle;
-        font-size: 4rem;
-        color: $color-tertiary;
-        display: initial;
-
-        &:hover {
-          color: $color-secondary;
-        }
-      }
     }
   }
 
@@ -73,7 +40,62 @@
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
-    @include respond(tab-land) {
+    &-container {
+      display: initial;
+      background-color: $color-primary;
+    }
+
+    &_item {
+      padding: 1.6rem;
+      text-align: center;
+    }
+    &_link {
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: $color-tertiary;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-secondary;
+        transition: all 0.2s;
+      }
+    }
+  }
+}
+
+//Responsive design
+
+@include respond(tab-land) {
+  .navbar {
+    line-height: 7rem;
+    height: 7rem;
+    width: 100%;
+
+    &-icons {
+      position: relative;
+      margin: auto;
+      height: 100%;
+      margin-bottom: 0;
+
+      &_link {
+        height: 100%;
+        margin: 0 2.5rem 0 2.5rem;
+        vertical-align: middle;
+      }
+      &_button {
+        position: absolute;
+        right: 2%;
+        font-size: 4rem;
+        color: $color-tertiary;
+        display: initial;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+    &-nav {
       position: relative;
       height: 100%;
       left: initial;
@@ -81,26 +103,28 @@
       -webkit-transform: translate(0, 0);
       -moz-transform: translate(0, 0);
       transform: translate(0, 0);
-    }
-  }
-  &-item {
-    padding: 1.6rem;
-    text-align: center;
 
-    @include respond(tab-land) {
-      display: none;
-    }
-  }
-  &-link {
-    text-transform: uppercase;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: $color-tertiary;
-    text-decoration: none;
+      &-container {
+        display: none;
+        background-color: $color-primary;
+      }
+      &_item {
+        padding: 0;
+        text-align: center;
+        border: none;
+      }
+      &_link {
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $color-tertiary;
+        text-decoration: none;
 
-    &:hover {
-      color: $color-secondary;
-      transition: all 0.2s;
+        &:hover {
+          color: $color-secondary;
+          transition: all 0.2s;
+        }
+      }
     }
   }
 }
