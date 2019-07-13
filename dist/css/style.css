@@ -134,7 +134,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
+  max-height: 100vh;
   width: 20rem;
   background-color: #3b5998; }
   .navbar-icons {
@@ -180,12 +181,11 @@ body {
 @media (max-width: 75em) {
   .navbar {
     line-height: 7rem;
-    height: 7rem;
-    width: 100%; }
+    height: 100%;
+    max-height: 7rem;
+    width: 100%;
+    overflow: hidden; }
     .navbar-icons {
-      position: relative;
-      margin: auto;
-      height: 100%;
       margin-bottom: 0; }
       .navbar-icons_link {
         height: 100%;
@@ -201,7 +201,7 @@ body {
           color: #8b9dc3; }
     .navbar-nav {
       position: relative;
-      height: 96%;
+      max-height: 100%;
       left: initial;
       top: initial;
       -webkit-transform: translate(0, 0);
