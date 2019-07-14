@@ -92,7 +92,7 @@ body {
   margin-top: 2rem !important; }
 
 .row {
-  max-width: 114rem;
+  max-width: 94rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -137,7 +137,8 @@ body {
   height: 100%;
   max-height: 100vh;
   width: 20rem;
-  background-color: #3b5998; }
+  background-color: #3b5998;
+  z-index: 100; }
   .navbar-icons {
     text-align: center;
     margin-bottom: 2rem; }
@@ -255,3 +256,39 @@ body {
   padding-top: 10rem;
   width: 100%;
   min-height: 100vh; }
+  .section-projects-column {
+    display: inline-block;
+    width: 33%;
+    padding-right: 2rem;
+    height: auto; }
+  .section-projects-card {
+    background-color: #8b9dc3;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .section-projects-card_image {
+      width: 100%;
+      height: 22rem; }
+    .section-projects-card-buttons {
+      display: inline-flex;
+      width: 100%; }
+      .section-projects-card-buttons_button {
+        width: 50%;
+        background-color: #dfe3ee;
+        border: 0.5px solid #3b5998;
+        height: 2.5rem;
+        text-align: center;
+        transition: all 0.2s ease; }
+        .section-projects-card-buttons_button:hover {
+          color: #dfe3ee;
+          background-color: #3b5998;
+          cursor: pointer; }
+
+@media (max-width: 56.25em) {
+  .section-projects-column {
+    text-align: center;
+    width: 100%; }
+  .section-projects-card {
+    display: inline-block;
+    width: 35rem;
+    margin-bottom: 3rem;
+    padding-right: 0; } }

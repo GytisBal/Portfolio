@@ -1,99 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Gytis Balčiūnas</title>
-    <script src="https://kit.fontawesome.com/ee063effa7.js"></script>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css">
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav class="navbar" id="sideNav">
-      <ul class="navbar-nav">
-        <div class="navbar-icons">
-          <a
-            class="navbar-icons_link"
-            href="https://www.facebook.com/gytis.balciunas.90"
-            target="_blank"
-            ><i class="navbar-icons_item fab fa-facebook-f"></i
-          ></a>
-          <a
-            class="navbar-icons_link"
-            href="https://www.linkedin.com/in/gytis-balciunas-5337b718a/"
-            target="_blank"
-          >
-            <i class="navbar-icons_item fab fa-linkedin-in"></i
-          ></a>
-          <a
-            class="navbar-icons_link"
-            href="https://github.com/GytisBal"
-            target="_blank"
-            ><i class="navbar-icons_item fab fa-github"></i
-          ></a>
-          <a href="javascript:void(0);" class="navbar-icons_button" onclick="togleNavigation()">
-              <i class="fas fa-bars"></i>
-            </a>
-              
-        </div>
-        <div  id="togleNavigation">
-            <li class="navbar-nav_item">
-                <a class="navbar-nav_link js-scroll-trigger" href="#about">About</a>
-              </li>
-              <li class="navbar-nav_item">
-                <a class="navbar-nav_link js-scroll-trigger" href="#projects"
-                  >Projects</a
-                >
-              </li>
-              <li class="navbar-nav_item">
-                <a class="navbar-nav_link js-scroll-trigger" href="#education"
-                  >Education</a
-                >
-              </li>
-        </div>
-        
-      </ul>
-    </nav>
-    <section class="section-about">
-      <div class="section-about-container ">
-        <h1 class="heading-primary">Gytis Balčiūnas</h1>
-        <hr class="heading-line" />
-        <div class="u-mt-2 section-about_contacts">
-          <h2 class="section-about_items heading-secondary">
-              <i class="fas fa-home"></i></i> Lithuania, Klaipėda
-          </h2>
-          <h2 class="section-about_items heading-secondary">
-            <i class="fas fa-phone-alt"></i> +37062482722
-          </h2>
-          <h2 class="section-about_items heading-secondary">
-              <i class="fas fa-envelope"></i>  <a class="section-about_email u-link-style"   href="mailto:name@email.com"> gytisbalciunas1551@gmail.com</a> 
-          </h2>
-        </div>
-        <div class="u-mt-4">
-          <p class="paragraph" >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam sunt debitis similique qui natus fugit, dicta officia explicabo nesciunt illo non quibusdam, itaque voluptas iusto odio quidem. Eligendi, molestias inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nemo saepe quae deserunt dolor rerum inventore velit sequi. Dolor provident repellat eaque minus reprehenderit molestias dolorem odio, accusantium eum? Doloribus?
-          </p>
-        </div>
-        <div class="section-about_programs u-mt-4">
-  <div class="section-about_programs--icons"><i class="fab fa-html5" style="color: blue; font-size: 5rem"></i> <br> <p class="paragraph">HTML5</p> </div>
-  <div class="section-about_programs--icons"><i class="fab fa-sass" style="color: pink; font-size: 5rem"></i> <br> <p class="paragraph">SASS</p> </div>
-  <div class="section-about_programs--icons"><i class="fab fa-js-square" style="color: #FFC30B; font-size: 5rem"></i> <br> <p class="paragraph">JavaScript</p> </div>
-        </div>
-        <div class=" section-about_github u-mt-10" >
-            <a class="u-link-style" href="https://github.com/GytisBal" target="blank">
-              <div class="calendar"></div>
-            </a>
-        </div> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Gytis Balčiūnas</title>
+  <script src="https://kit.fontawesome.com/ee063effa7.js"></script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar" id="sideNav">
+    <ul class="navbar-nav">
+      <div class="navbar-icons">
+        <a class="navbar-icons_link" href="https://www.facebook.com/gytis.balciunas.90" target="_blank"><i
+            class="navbar-icons_item fab fa-facebook-f"></i></a>
+        <a class="navbar-icons_link" href="https://www.linkedin.com/in/gytis-balciunas-5337b718a/" target="_blank">
+          <i class="navbar-icons_item fab fa-linkedin-in"></i></a>
+        <a class="navbar-icons_link" href="https://github.com/GytisBal" target="_blank"><i
+            class="navbar-icons_item fab fa-github"></i></a>
+        <a href="javascript:void(0);" class="navbar-icons_button" onclick="togleNavigation()">
+          <i class="fas fa-bars"></i>
+        </a>
+
       </div>
-    </section>
-    <section class="section-projects">
-      <div class="section-about-container">
-        <h1 class="heading-primary">Projects</h1>
-        <hr class="heading-line">
+      <div id="togleNavigation">
+        <li class="navbar-nav_item">
+          <a class="navbar-nav_link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="navbar-nav_item">
+          <a class="navbar-nav_link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="navbar-nav_item">
+          <a class="navbar-nav_link js-scroll-trigger" href="#education">Education</a>
+        </li>
       </div>
-    </section>
-    <script src="js/script.js"></script>
-  </body>
+
+    </ul>
+  </nav>
+  <section class="section-about">
+    <div class="section-about-container ">
+      <h1 class="heading-primary">Gytis Balčiūnas</h1>
+      <hr class="heading-line" />
+      <div class="u-mt-2 section-about_contacts">
+        <h2 class="section-about_items heading-secondary">
+          <i class="fas fa-home"></i></i> Lithuania, Klaipėda
+        </h2>
+        <h2 class="section-about_items heading-secondary">
+          <i class="fas fa-phone-alt"></i> +37062482722
+        </h2>
+        <h2 class="section-about_items heading-secondary">
+          <i class="fas fa-envelope"></i> <a class="section-about_email u-link-style" href="mailto:name@email.com">
+            gytisbalciunas1551@gmail.com</a>
+        </h2>
+      </div>
+      <div class="u-mt-4">
+        <p class="paragraph">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam sunt debitis similique qui natus fugit,
+          dicta officia explicabo nesciunt illo non quibusdam, itaque voluptas iusto odio quidem. Eligendi, molestias
+          inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nemo saepe quae deserunt dolor rerum
+          inventore velit sequi. Dolor provident repellat eaque minus reprehenderit molestias dolorem odio, accusantium
+          eum? Doloribus?
+        </p>
+      </div>
+      <div class="section-about_programs u-mt-4">
+        <div class="section-about_programs--icons"><i class="fab fa-html5" style="color: blue; font-size: 5rem"></i>
+          <br>
+          <p class="paragraph">HTML5</p>
+        </div>
+        <div class="section-about_programs--icons"><i class="fab fa-sass" style="color: pink; font-size: 5rem"></i> <br>
+          <p class="paragraph">SASS</p>
+        </div>
+        <div class="section-about_programs--icons"><i class="fab fa-js-square"
+            style="color: #FFC30B; font-size: 5rem"></i> <br>
+          <p class="paragraph">JavaScript</p>
+        </div>
+      </div>
+      <div class=" section-about_github u-mt-10">
+        <a class="u-link-style" href="https://github.com/GytisBal" target="blank">
+          <div class="calendar"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="section-projects">
+    <div class="section-projects-container">
+      <h1 class="heading-primary">Projects</h1>
+      <hr class="heading-line">
+      <div class=" u-mt-10">
+        <div class="section-projects-column">
+          <div class="section-projects-card">
+            <img class="section-projects-card_image" src="img/inclouds.png" alt="inclouds.lt">
+            <div class="section-projects-card_text">
+              <h2 class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis dolores
+                alias, eum quaerat officii</h2>
+              <div class="section-projects-card-buttons">
+                <a href="https://inclouds.lt/" target="_blank"
+                  class="heading-secondary u-link-style section-projects-card-buttons_button">
+                  Live demo
+                </a>
+                <a href="https://github.com/GytisBal/inclouds.lt" target="_blank"
+                  class="heading-secondary u-link-style section-projects-card-buttons_button">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-projects-column">
+          <div class="section-projects-card">
+            <img class="section-projects-card_image" src="img/stocks.png" alt="inclouds.lt">
+            <div class="section-projects-card_text">
+              <h2 class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis dolores
+                alias, eum quaerat officii</h2>
+              <div class="section-projects-card-buttons">
+                <a href="https://gytisbal.github.io/stocks-API/" target="_blank"
+                  class="heading-secondary u-link-style section-projects-card-buttons_button">
+                  Live demo
+                </a>
+                <a href="https://github.com/GytisBal/stocks-API" target="_blank"
+                  class="heading-secondary u-link-style section-projects-card-buttons_button">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-projects-column">
+          <div class="section-projects-card">
+            <img class="section-projects-card_image" src="img/atlyginimas.png" alt="inclouds.lt">
+            <div class="section-projects-card_text">
+              <h2 class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis dolores
+                alias, eum quaerat officii</h2>
+              <div class="section-projects-card-buttons">
+                <a href="https://atlyginimas.tk/" target="_blank"
+                  class="heading-secondary u-link-style section-projects-card-buttons_button">
+                  Live demo
+                </a>
+                <a href="https://github.com/GytisBal/atlyginimas" target="_blank"
+                  class="heading-secondary u-link-style section-projects-card-buttons_button">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
