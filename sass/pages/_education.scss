@@ -1,0 +1,13 @@
+.section-education {
+  padding-top: 10rem;
+  width: 100%;
+  min-height: 100vh;
+  &-course {
+    &_link {
+      transition: all 0.2s ease;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}
