@@ -71,6 +71,9 @@ body {
   text-decoration: none;
   color: inherit; }
 
+.current {
+  color: #8b9dc3 !important; }
+
 .u-center-text {
   text-align: center !important; }
 

@@ -2,6 +2,9 @@
   text-decoration: none;
   color: inherit;
 }
+.current {
+  color: $color-secondary !important;
+}
 .u-center-text {
   text-align: center !important;
 }
