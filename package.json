@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
     "node.normalize.scss": "^3.0.3"
   },
